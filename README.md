@@ -39,6 +39,26 @@ pip install -r requirements.txt
 
 ⚠️ Ne jamais écrire la clé dans les fichiers du projet
 
+## 📧 Configuration SMTP (envoi d'email)
+
+Le workflow n8n envoie automatiquement le rapport par email après chaque scan.
+Pour activer cette fonctionnalité, tu dois configurer un serveur SMTP dans n8n.
+
+### Option 1 — Gmail (recommandé)
+
+1. Active la validation en 2 étapes sur ton compte Google
+2. Va sur https://myaccount.google.com/apppasswords
+3. Génère un **mot de passe d'application** (App Password)
+4. Dans n8n : **Settings → Credentials → + Add Credential → SMTP**
+
+| Champ | Valeur |
+|---|---|
+| Host | smtp.gmail.com |
+| Port | 465 |
+| SSL | ✅ Activé |
+| User | ton.email@gmail.com |
+| Password | le mot de passe d'application généré |
+
 ## 🚀 Lancement
 
 ⚠️ Ouvrir 2 terminaux séparés et lancer les 2 commandes en même temps.
