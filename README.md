@@ -7,11 +7,20 @@ Scanner de vulnérabilités automatisé combinant **n8n** (orchestration) et **F
 Utilisateur → Flask (port 3000) → n8n Webhook (port 5678) → Nmap / Nikto / Groq AI → Rapport PDF
 ## 📋 Prérequis
 
-- Python 3.x + pip
-- Node.js + npm
-- n8n : `npm install -g n8n`
-- Nmap : `sudo apt install nmap`
-- Nikto : `sudo apt install nikto`
+| Outil | Version testée | Installation |
+|---|---|---|
+| Python | 3.10+ | `sudo apt install python3` |
+| pip | 23+ | `sudo apt install python3-pip` |
+| Node.js | 18+ | `sudo apt install nodejs` |
+| npm | 9+ | `sudo apt install npm` |
+| n8n | 1.x | `npm install -g n8n` |
+| Nmap | 7.80+ | `sudo apt install nmap` |
+| Nikto | 2.1.6+ | `sudo apt install nikto` |
+| WhatWeb | 0.5.5+ | `sudo apt install whatweb` |
+| Gobuster | 3.x | `sudo apt install gobuster` |
+| WPScan | 3.x | `gem install wpscan` |
+| Hydra | 9.x | `sudo apt install hydra` |
+| SSLScan | 2.x | `sudo apt install sslscan` |
 
 ## ⚙️ Installation
 ```bash
